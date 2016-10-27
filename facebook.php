@@ -9,7 +9,7 @@ final class Facebook extends \shgysk8zer0\Core\URLSearchParams
 	public function __construct($url)
 	{
 		if ($this->_isURL($url)) {
-			parent::__construct(['u' => $url]);
+			parent::__construct(['u' => "$url"]);
 		} else {
 			throw new \InvalidArgumentException("$url is not a valid URL.");
 		}

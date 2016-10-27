@@ -9,7 +9,7 @@ final class Reddit extends URLSearchParams
 	public function __construct($url)
 	{
 		if ($this->_isURL($url)) {
-			parent::__construct(['url' => $url]);
+			parent::__construct(['url' => "$url"]);
 		} else {
 			throw new \InvalidArgumentException("$url is not a valid URL.");
 		}
