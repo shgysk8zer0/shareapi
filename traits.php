@@ -5,7 +5,7 @@ trait Traits
 {
 	private function _isURL($url)
 	{
-		return filter_var($url, FILTER_VALIDATE_URL);
+		return filter_var("$url", FILTER_VALIDATE_URL);
 	}
 
 	public function __toString()
