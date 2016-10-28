@@ -1,7 +1,7 @@
 <?php
 namespace shgysk8zer0\ShareAPI;
 
-final class Reddit extends URLSearchParams
+final class Reddit extends \shgysk8zer0\Core\URLSearchParams
 {
 	use Traits;
 	const ENDPOINT = 'https://reddit.com/submit';
